@@ -16,7 +16,7 @@
 apiVersion: "sparkoperator.k8s.io/v1beta2"
 kind: SparkApplication
 metadata:
-  name: spark-pi3
+  name: spark-pi4
   namespace: default
 spec:
   type: Python
@@ -24,7 +24,7 @@ spec:
   image: "gcr.io/spark-operator/spark-py:v2.4.4"
   imagePullPolicy: IfNotPresent
   #mainApplicationFile: "https://raw.githubusercontent.com/apache/spark/master/examples/src/main/python/pi.py"
-  mainApplicationFile: "https://github.com/janarthanandev/spark_kube/spark_test.py" 
+  mainApplicationFile: "https://raw.githubusercontent.com/janarthanandev/spark_kube/master/spark_test.py" 
   sparkVersion: "2.4.0"
   restartPolicy:
      type: OnFailure
